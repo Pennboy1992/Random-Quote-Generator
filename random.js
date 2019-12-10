@@ -26,6 +26,30 @@ var quotes = [
 {
   word: "Stay hungry, stay foolish.",
   author: "-Steve Jobs"
+},
+{
+  word: "The greatest wealth is to live content with little.",
+  author: "-Plato"
+},
+{
+  word: "The future belongs to those who prepare for it today. ",
+  author: "-Malcom X"
+},
+{
+  word: "The successful warrior is the average man, with laser-like focus.",
+  author: "-Bruce Lee"
+},
+{
+  word: "A great man is always willing to be little.",
+  author: "-Ralph Waldo Emmerson"
+},
+{
+  word: "It always seems impossible until it’s done.",
+  author: "-Nelson Mandela"
+},
+{
+  word: "The unexamined life is not worth living.",
+  author: "-Socrates"
 }
 ];
 

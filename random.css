@@ -1,7 +1,8 @@
 
 #buttonPlace {
   width: 100%;
-  margin-top: 5%;
+  margin-top: 100px;
+  position: fixed;
 }
 
 div button p {
@@ -9,8 +10,8 @@ div button p {
 }
 
 #btn {
- float: right;
- margin-right: 42%;
+  float: right;
+  margin-right: 43%;
   width: 200px;
   height: 40px;
   background-color: #27292b;
@@ -26,11 +27,20 @@ div button p {
   line-height: 100%;
 }
 
-#btn:active{
+#btn:active {
+  opacity: 1;
+  border: 8px solid gold;
+  border-radius: 15px;
+  line-height: 75%;
+  outline: 0;
+}
+
+#btn:focus {
   opacity: 1;
   border: 6px solid gold;
   border-radius: 15px;
   line-height: 80%;
+  outline: 0;
 }
 
 body {
