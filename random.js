@@ -1,55 +1,45 @@
 'use strict';
 
-var body = document.body.style;
+
 
 var quoteField = document.getElementById('quoteField');
+var author = document.getElementById('authorField');
+var btn = document.getElementById('btn');
+
 
 var quotes = [
-{ word: "But that was life: Nobody got a guided tour to their own theme park. You had to hop on the rides as they presented themselves, never knowing whether you would like the one you were in line for...or if the bastard was going to make you throw up your corn dog and your cotton candy all over the place.",
-author: "-J.R. Ward"
-
+{ 
+  word: "But that was life: Nobody got a guided tour to their own theme park. You had to hop on the rides as they presented themselves, never knowing whether you would like the one you were in line for...or if the bastard was going to make you throw up your corn dog and your cotton candy all over the place.",
+  author: "-J.R. Ward"
 },
-{
+
+{ 
+  word: "I have no special talent. I am only passionately curious.",
+  author: "-Albert Einstein"
 },
+
+{ 
+  word: "If you judge people, you have no time to love them.",
+  author: "-Mother Teresa"
+},
+
 {
+  word: "Stay hungry, stay foolish.",
+  author: "-Steve Jobs"
 }
-]
+];
 
-// console.log(quotes[0].word)
+quoteField.innerHTML= quotes[0].word;
+author.innerHTML= quotes[0].author;
 
-// function printQuote(arr){
-//   let q = 0;
-//   let str = "";
-//   for (let i of arr){
-//     str += `${arr[q].word} <br/>`;
-//     str +=  ``+ `${arr[q].author} <br/>`;
-//     str += `${arr[q].source} <br/>`;
-//     str += `<br/>`;
-//     q++;
-//   }
-
-//   str.fontcolor('white');
-
-//  quoteField.innerHTML = str.fontcolor('white');
-//  body.backgroundColor = 'red';
- 
-// }
-// function printQuote2(arr){
-//   let str = `${arr[Math.floor(Math.random() * arr.length - 1) + 1].word}`;
-//   quoteField.innerHTML = str;
-// }
-
-function changeColor () {
-  body.backgroundColor = 'red';
+function newQuote(){
+  var quoteNum = Math.floor(Math.random() * quotes.length) ;
+  console.log(quoteNum);
+  quoteField.innerHTML = quotes[quoteNum].word;
+  author.innerHTML = quotes[quoteNum].author;
+  console.log('clicked');
 }
 
-function c2(){
-  body.backgroundColor = 'blue';
-}
+btn.addEventListener('click',newQuote);
 
-// setInterval(changeColor,7000);
-// setInterval(c2, 4000);
-// printQuote(quotes);
-var print = printQuote2(quotes);
-
-setInterval(print, 1000);
+console.log(quotes[0]);

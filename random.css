@@ -25,6 +25,14 @@ div button p {
   border-radius: 15px;
   line-height: 100%;
 }
+
+#btn:active{
+  opacity: 1;
+  border: 6px solid gold;
+  border-radius: 15px;
+  line-height: 80%;
+}
+
 body {
   background-image: url("/images/blackandwhitephoto.jpeg");
   background-repeat: no-repeat;
