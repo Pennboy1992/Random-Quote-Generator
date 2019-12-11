@@ -43,10 +43,9 @@ div button p {
   outline: 0;
 }
 
-body {
-  background-image: url("/images/blackandwhitephoto.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
+html {
+  background-image: linear-gradient(black 0%,black 30%, grey 50%, black 80%,black 100%);
+  background-size: 100%;
 }
 blockquote {
   margin-top: 200px;
